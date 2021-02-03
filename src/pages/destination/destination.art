@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>葡眾旅遊商城--目的地</title>
+</head>
+
+<body>
+    <div class="destination-page" class="destination-layout">
+        <!-- 頭部 -->
+        <header class="header-layout">
+            {{include './components/header/header.art'}}
+        </header>
+
+        <!-- 主體 -->
+        <div class="main-layout">
+            {{include './components/main/main.art'}}
+        </div>
+
+        <!-- 標籤欄 -->
+        <div class="tabbar-layout">
+            <% include('../../components/tabbar/tabbar.art',{active:'destination'})%>
+        </div>
+
+        <!-- 返回頂部 -->
+        <div class="backtop-layout">
+            {{include '../../components/backtop/backtop.art'}}
+        </div>
+    </div>
+</body>
+
+</html>
